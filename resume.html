@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Manar's resume</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styleResume.css">
+    <script src="https://kit.fontawesome.com/062698fc15.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutSec">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </nav>
+
+            <section id="HomeSec">
+                <div class="main">
+                    <h1 class="headings">HELLO.<br>Welcome to My Website!</h1>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="aboutSec">
+        <div class="container">
+            <div class="row">
+                <h1 class="headings">ABOUT ME</h1>
+                <div id="about">
+                    <h2>My Name Is Manar Majeed</h2>
+                    <p>I'm a Software Engneering student at the University of Jeddah.<br>
+                        Quick learning, teamwork and team management are my strengths that enable<br>
+                        me to integrate and adapt anywhere and accomplish any work assigned to me.<br>
+                        I dream of beaing successful of what I do, a dutiful daughter<br>
+                        and a wonderful mother.
+
+                    </p>
+
+                    <div class="tabTitle">
+                        <p class="tab-link active" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-link" onclick="opentab('education')"> Education </p>
+                    </div>
+                    <div class="tabContent activeTab" id="skills">
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Mobile Programming</li>
+                            <li>UI/UX</li>
+                        </ul>
+                    </div>
+                    <div class="tabContent" id="education">
+                        <ul>
+                            <li>Bachelor's - University of Jeddah</li>
+                            <li>High School - Thirteenth High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h1 class="headings">Projects</h1>
+            <div class="carMa">
+                <div class="projectsList">
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h2>Galsa</h2>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Application that helps people to meet in order to get benefit from each other</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h2>Student Cummunity for Breaktime</h2>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Application idea is to help students to annouce their activities and study with each
+                                    other</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <h2>Game Hall Booking System</h2>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>Booking system for game halls, skating and bolling </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contactMe">
+        <div class="container">
+            <h1 class="headings">Contact Me</h1>
+            <div class="bord">
+                <div class="content-left">
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>2114050@uj.edu.sa</p>
+                    <p><i class="fa-solid fa-phone"></i>0542241626</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/manarmjd"><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/ManarMajeed1"><i class="fab fa-github"></i></a>
+
+                    </div>
+                </div>
+                <div class="content-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>Copyright © Manar Majeed. Personal Resume for Assignment1</p>
+    </footer>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tabContent");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("activeTab");
+            }
+            //event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("activeTab");
+        }
+    </script>
+</body>
+
+</html>
